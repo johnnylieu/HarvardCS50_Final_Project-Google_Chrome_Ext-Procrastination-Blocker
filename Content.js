@@ -20,9 +20,8 @@ function newQuote() {
 };
 
 //this will display in place of blocked website aka the "blocker display"
-const generateHTML = (pageName) => {
+const generateHTML = (pageName, newQuote) => {
     return `
-    newQuote();
    
     <div id="clouds">
        <div class="cloud x1"></div>
@@ -40,7 +39,7 @@ const generateHTML = (pageName) => {
        <br>
        <div class='_2'>You'll thank yourself later - building yourself a better future is more important!</div>
        <br>
-       <div class='_2' id="quoteDisplay"></div>
+       <div class='_2' id="quoteDisplay">${newQuote}</div>
    </div>
     `;
 };
@@ -284,7 +283,7 @@ switch (window.location.hostname) {
     //youtube
     case "www.youtube.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("YOUTUBE");
+        document.body.innerHTML = generateHTML("YOUTUBE", newQuote);
         break;
     
     //netflix
