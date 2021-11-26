@@ -39,6 +39,9 @@ var quotes = [
     'Be a warrior, not a worrier. ― Johnny Lieu'
 ];
 
+// a randomly generated decimal multiplied by 20, then rounded down to the nearest whole number
+var randomNumber = Math.floor(Math.random() * 20);
+
 //styling for the "blocker display"
 const generateStyling = () => {
     return `<style>@import url(https://fonts.googleapis.com/css?family=opensans:500);
