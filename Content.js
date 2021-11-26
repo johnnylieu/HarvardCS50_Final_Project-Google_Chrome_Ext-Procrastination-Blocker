@@ -1,4 +1,4 @@
-//this will display in place of blocked website
+//this will display in place of blocked website aka the "blocker display"
 const generateHTML = (pageName) => {
     return `
    
@@ -20,7 +20,7 @@ const generateHTML = (pageName) => {
     `;
 };
 
-//styling for the "blocker site"
+//styling for the "blocker display"
 const generateStyling = () => {
     return `<style>@import url(https://fonts.googleapis.com/css?family=opensans:500);
     body {
@@ -256,8 +256,63 @@ const generateStyling = () => {
 
 // switch case for blocking websites - if statements would be too long
 switch (window.location.hostname) {
+    //youtube
     case "www.youtube.com":
         document.head.innerHTML = generateStyling();
         document.body.innerHTML = generateHTML("YOUTUBE");
+        break;
+    
+    //netflix
+    case "www.netflix.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("NETFLIX");
+        break;
+
+    //hulu
+    case "www.hulu.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("HULU");
+        break;
+
+    //facebook
+    case "www.facebook.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("FACEBOOK");
+        break;
+
+    //instagram
+    case "www.instagram.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("INSTAGRAM");
+        break;
+
+    //twitter
+    case "www.twitter.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("TWITTER");
+        break;
+    
+    //tubi tv
+    case "www.tubitv.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("TUBI TV");
+        break;
+
+    //disney plus
+    case "www.disneyplus.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("DISNEY+");
+        break;
+
+    //hbo max
+    case "www.hbomax.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("HBO MAX");
+        break;
+
+    //discord
+    case "www.discord.com":
+        document.head.innerHTML = generateStyling();
+        document.body.innerHTML = generateHTML("DISCORD");
         break;
 };
