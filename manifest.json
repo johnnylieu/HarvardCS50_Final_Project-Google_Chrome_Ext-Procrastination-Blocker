@@ -1,0 +1,11 @@
+{
+    "manifest_version": 1,
+    "name": "Procrastination Blocker",
+    "version": "0.0.1",
+    "content_script": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["Content.js"]
+        }
+    ]
+}
