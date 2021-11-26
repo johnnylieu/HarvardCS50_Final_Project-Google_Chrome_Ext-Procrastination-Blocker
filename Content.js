@@ -1,6 +1,30 @@
+//quotes for random quote generator
+var quotes = [
+    'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do. ― Pelé, Brazillian pro footballer',
+    'There are no secrets to success. It is the result of preparation, hard work, and learning from failure. ― General Colin Powell, former US Secretary of State',
+    'In order to succeed, your desire for success should be greater than your fear of failure. ― Bill Cosby, stand-up comedian',
+    'However difficult life may seem, there is always something you can do and succeed at. ― Stephen Hawking',
+    'Striving for success without hard work is like trying to harvest where you haven’t planted. ― David Bly, American politician',
+    'Success is the sum of small efforts, repeated day in and day out. ―  Robert Collier, self-help author',
+    'Success isn’t overnight. It’s when every day you get a little better than the day before. It all adds up. ― Dwayne Johnson, actor and former pro-wrestler',
+    'The secret of success is to do the common things uncommonly well. ― John D. Rockefeller, widely considered the richest man in modern history',
+    'Success doesn’t come to you, you go to it. ―  Marva Collins, American educator',
+    'Recipe for success: Study while others are sleeping; work while others are loafing; prepare while others are playing; and dream while others are wishing. ― William A. Ward, motivational writer',
+    'We may encounter many defeats but we must not be defeated. ― Maya Angelou',
+    'Be a warrior, not a worrier. ― Johnny Lieu'
+];
+
+//new quotes function
+function newQuote() {
+    var randomNumber = Math.floor(math.random() * (quotes.length));
+    //inserting new quote
+    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+};
+
 //this will display in place of blocked website aka the "blocker display"
 const generateHTML = (pageName) => {
     return `
+    newQuote();
    
     <div id="clouds">
        <div class="cloud x1"></div>
@@ -18,29 +42,10 @@ const generateHTML = (pageName) => {
        <br>
        <div class='_2'>You'll thank yourself later - building yourself a better future is more important!</div>
        <br>
-       <div class='_2' id='quoteDisplay'> </div>
+       <div class='_2' id="quoteDisplay"> </div>
    </div>
     `;
 };
-
-//quotes for random quote generator
-var quotes = [
-    'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do. ― Pelé, Brazillian pro footballer',
-    'There are no secrets to success. It is the result of preparation, hard work, and learning from failure. ― General Colin Powell, former US Secretary of State',
-    'In order to succeed, your desire for success should be greater than your fear of failure. ― Bill Cosby, stand-up comedian',
-    'However difficult life may seem, there is always something you can do and succeed at. ― Stephen Hawking',
-    'Striving for success without hard work is like trying to harvest where you haven’t planted. ― David Bly, American politician',
-    'Success is the sum of small efforts, repeated day in and day out. ―  Robert Collier, self-help author',
-    'Success isn’t overnight. It’s when every day you get a little better than the day before. It all adds up. ― Dwayne Johnson, actor and former pro-wrestler',
-    'The secret of success is to do the common things uncommonly well. ― John D. Rockefeller, widely considered the richest man in modern history',
-    'Success doesn’t come to you, you go to it. ―  Marva Collins, American educator',
-    'Recipe for success: Study while others are sleeping; work while others are loafing; prepare while others are playing; and dream while others are wishing. ― William A. Ward, motivational writer',
-    'We may encounter many defeats but we must not be defeated. ― Maya Angelou',
-    'Be a warrior, not a worrier. ― Johnny Lieu'
-];
-
-// a randomly generated decimal multiplied by 20, then rounded down to the nearest whole number
-var randomNumber = Math.floor(Math.random() * 20);
 
 //styling for the "blocker display"
 const generateStyling = () => {
