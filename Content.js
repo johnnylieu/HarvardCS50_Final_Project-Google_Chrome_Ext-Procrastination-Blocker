@@ -14,15 +14,15 @@ var quotes = [
 
 //new quotes function
 function newQuote() {
-    var randomNumber = Math.floor(math.random() * (quotes.length));
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
     //inserting new quote
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 };
 
 //this will display in place of blocked website aka the "blocker display"
 const generateHTML = (pageName) => {
-    newQuote();
     return `
+    newQuote();
    
     <div id="clouds">
        <div class="cloud x1"></div>
@@ -40,7 +40,7 @@ const generateHTML = (pageName) => {
        <br>
        <div class='_2'>You'll thank yourself later - building yourself a better future is more important!</div>
        <br>
-       <div class='_2' id="quoteDisplay"> </div>
+       <div class='_2' id="quoteDisplay"></div>
    </div>
     `;
 };
