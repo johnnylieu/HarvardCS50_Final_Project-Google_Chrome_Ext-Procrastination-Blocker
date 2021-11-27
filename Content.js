@@ -16,11 +16,13 @@ var quotes = [
 function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     //inserting new quote
-    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+    var newRandomQuote = quotes[randomNumber];
+    console.log(newRandomQuote);
+    return newRandomQuote;
 };
 
 //this will display in place of blocked website aka the "blocker display"
-const generateHTML = (pageName, newQuote) => {
+const generateHTML = (pageName, newRandomQuote) => {
     return `
    
     <div id="clouds">
@@ -39,7 +41,7 @@ const generateHTML = (pageName, newQuote) => {
        <br>
        <div class='_2'>You'll thank yourself later - building yourself a better future is more important!</div>
        <br>
-       <div class='_2' id="quoteDisplay">${newQuote}</div>
+       <div class='_2' id="quoteDisplay">${newRandomQuote}</div>
    </div>
     `;
 };
@@ -283,7 +285,7 @@ switch (window.location.hostname) {
     //youtube
     case "www.youtube.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("YOUTUBE", newQuote);
+        document.body.innerHTML = generateHTML("YOUTUBE", newRandomQuote);
         break;
     
     //netflix
