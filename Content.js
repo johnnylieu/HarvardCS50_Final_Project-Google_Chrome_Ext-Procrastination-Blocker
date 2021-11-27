@@ -280,7 +280,7 @@ const generateStyling = () => {
      </style>`
 }
 
-// switch case for blocking websites - if statements would be too long
+// switch case for blocking websites - if statements would be too long - will need a more scalable code for the future
 switch (window.location.hostname) {
     //youtube
     case "www.youtube.com":
