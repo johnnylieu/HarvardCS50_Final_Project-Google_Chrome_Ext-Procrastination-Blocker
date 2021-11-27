@@ -31,3 +31,4 @@ This application is a work in progress, future updates will include:
 
 1. More blocked websites.
 2. A more scalable code.
+3. Option for users to add custom websites to block.
