@@ -7,13 +7,13 @@ This is a Google Chrome extension that blocks most social media sites so the use
 ## Installation
 This is currently not in the Google Chrome store so in order to use this app, you'll download my code then:
 1. Open Google Chrome and go to "chrome://extensions"
-![chrome extension](1.png "chrome extension")
+![chrome extension](https://github.com/johnnylieu/HarvardCS50_Final_Project-Google_Chrome_Ext-Procrastination-Blocker/blob/master/Screenshots/1.png "chrome extension")
 2. Click on "Load unpacked"
-![load unpacked](2.png "load unpacked")
+![load unpacked](https://github.com/johnnylieu/HarvardCS50_Final_Project-Google_Chrome_Ext-Procrastination-Blocker/blob/master/Screenshots/2.png "load unpacked")
 3. Navigate to the code's folder and open it
-![open folder](3.png "open folder")
+![open folder](https://github.com/johnnylieu/HarvardCS50_Final_Project-Google_Chrome_Ext-Procrastination-Blocker/blob/master/Screenshots/3.png "open folder")
 4. Make sure Procrastination Blocker is enabled and you're good to go!
-![enable plugin](3.png "enable plugin")
+![enable plugin](https://github.com/johnnylieu/HarvardCS50_Final_Project-Google_Chrome_Ext-Procrastination-Blocker/blob/master/Screenshots/4.png "enable plugin")
 
 ## Usage 
 For anyone who has a habit of going on social media while studying and need help staying focused.
