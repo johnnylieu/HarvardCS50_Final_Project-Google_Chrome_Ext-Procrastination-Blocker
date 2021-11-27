@@ -291,54 +291,54 @@ switch (window.location.hostname) {
     //netflix
     case "www.netflix.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("NETFLIX");
+        document.body.innerHTML = generateHTML("NETFLIX", newQuote());
         break;
 
     //hulu
     case "www.hulu.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("HULU");
+        document.body.innerHTML = generateHTML("HULU", newQuote());
         break;
 
     //facebook
     case "www.facebook.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("FACEBOOK");
+        document.body.innerHTML = generateHTML("FACEBOOK", newQuote());
         break;
 
     //instagram
     case "www.instagram.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("INSTAGRAM");
+        document.body.innerHTML = generateHTML("INSTAGRAM", newQuote());
         break;
 
     //twitter
     case "www.twitter.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("TWITTER");
+        document.body.innerHTML = generateHTML("TWITTER", newQuote());
         break;
     
     //tubi tv
     case "www.tubitv.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("TUBI TV");
+        document.body.innerHTML = generateHTML("TUBI TV", newQuote());
         break;
 
     //disney plus
     case "www.disneyplus.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("DISNEY+");
+        document.body.innerHTML = generateHTML("DISNEY+"), newQuote();
         break;
 
     //hbo max
     case "www.hbomax.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("HBO MAX");
+        document.body.innerHTML = generateHTML("HBO MAX", newQuote());
         break;
 
     //discord
     case "discord.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("DISCORD");
+        document.body.innerHTML = generateHTML("DISCORD", newQuote());
         break;
 };
