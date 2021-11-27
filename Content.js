@@ -41,8 +41,6 @@ const generateHTML = (pageName, newRandomQuote) => {
        <div class='_1'>GET BACK TO STUDYING</div>
        <div class='_2'>STUDYING > ${pageName}</div>
        <br>
-       <div class='_2'>You'll thank yourself later - building yourself a better future is more important!</div>
-       <br>
        <div class='_2' id="quoteDisplay">${newRandomQuote}</div>
    </div>
     `;
