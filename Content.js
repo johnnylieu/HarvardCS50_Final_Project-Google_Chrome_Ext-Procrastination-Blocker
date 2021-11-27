@@ -2,7 +2,7 @@
 var quotes = [
     'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do. ― Pelé, Brazillian pro footballer',
     'There are no secrets to success. It is the result of preparation, hard work, and learning from failure. ― General Colin Powell, former US Secretary of State',
-    'In order to succeed, your desire for success should be greater than your fear of failure. ― Bill Cosby, stand-up comedian',
+    'And why do we fall, Bruce? So we can learn to pick ourselves up. ― Thomas Wayne, Batman’s Dad, in ‘Batman Begins’',
     'However difficult life may seem, there is always something you can do and succeed at. ― Stephen Hawking',
     'Success is the sum of small efforts, repeated day in and day out. ―  Robert Collier, self-help author',
     'Success isn’t overnight. It’s when every day you get a little better than the day before. It all adds up. ― Dwayne Johnson, actor and former pro-wrestler',
@@ -17,9 +17,11 @@ function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quotes.length));
     //inserting new quote
     var newRandomQuote = quotes[randomNumber];
-    console.log(newRandomQuote);
     return newRandomQuote;
 };
+//newQuote() is working
+console.log(newQuote());
+newQuote();
 
 //this will display in place of blocked website aka the "blocker display"
 const generateHTML = (pageName, newRandomQuote) => {
@@ -285,7 +287,7 @@ switch (window.location.hostname) {
     //youtube
     case "www.youtube.com":
         document.head.innerHTML = generateStyling();
-        document.body.innerHTML = generateHTML("YOUTUBE", newRandomQuote);
+        document.body.innerHTML = generateHTML("YOUTUBE", newQuote());
         break;
     
     //netflix
